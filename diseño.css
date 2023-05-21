@@ -1,0 +1,283 @@
+/* Estilos generales */
+
+/* Este es para el fondo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Encabezado de la página */
+header {
+  background-color: transparent; /* Elimina el color de fondo */
+  color: #ffffff;
+  padding: 50px;
+  text-align: center;
+  position: relative; /* Añade posición relativa para los elementos internos */
+  margin-bottom: 0; /* Ajusta el margen inferior */
+}
+
+main {
+  margin: 0; /* Ajusta los márgenes superior e inferior */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  min-height: 50vh; /* Ajusta la altura mínima del contenido para centrarlo verticalmente */
+  overflow-y: hidden; /* Oculta el desbordamiento vertical */
+}
+
+
+/* Espacio entre el head y el main */
+head {
+  margin-bottom: 0; /* Ajusta el margen inferior */
+}
+
+/* Espacio entre el main y el footer */
+footer {
+  margin-top: 0; /* Ajusta el margen superior */
+}
+
+/*MOVER LAS REDES HACIA ARRIBA O HACIA ABAJO*/
+ul.enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Muestra los elementos en columnas */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+ul.enlaces li {
+  margin-bottom: 20px; /* Espacio entre cada red social */
+  display: flex;
+  align-items: center;
+}
+
+/* Color del texto */
+ul.enlaces li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul.enlaces li a:hover {
+  position: relative;
+}
+
+/*EFECTO LUZ NEON*/
+ul.enlaces li a:hover span {
+  position: relative;
+  z-index: -1;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: text-shadow 0.3s ease;
+  -moz-transition: text-shadow 0.3s ease;
+  -ms-transition: text-shadow 0.3s ease;
+  -o-transition: text-shadow 0.3s ease;
+}
+
+ul.enlaces li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+header h2 {
+  color: #888;
+  font-size: 16px;
+  margin-top: -15px;
+}
+
+.logo-motion {
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.logo-motion:hover {
+  transform: translateY(-5px);
+}
+
+/* efecto de mover*/
+/* Agrega una clase adicional al nombre de la red social */
+ul.enlaces li a .social-name {
+  /* Estilos para el nombre de la red social */
+  transition: color 0.3s ease; /* Agrega una transición para el color */
+}
+
+/* Agrega una transición para el desplazamiento del logo */
+ul.enlaces li a:hover .logo-motion {
+  transform: translateY(-5px);
+}
+
+/*EFECTO DE LA FOTO DE PERFIL*/
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Aplica el efecto de círculo */
+  object-fit: cover; /* Ajusta la imagen al círculo */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  text-align: center;
+  margin-left: 10px;
+}
+
+/*FOOTER DERECHOS DE AUTOR*/
+footer {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  bottom: 100; /* Ajusta el pie de página en la parte inferior */
+  width: 100%;
+}
+
+.line {
+  width: 30%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin-top: 10px;
+}
+
+main {
+  overflow: hidden;
+}
+
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile-text {
+    margin-top: 5px;
+  }
+  ul.enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flujo a columna */
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    
+  }
+
+  /* Encabezado de la página */
+  header {
+    padding: 20px; /* Reduce el padding */
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    margin-bottom: 5px; /* Reduce el espacio inferior */
+  }
+  header h2 {
+    font-size: 14px; /* Reduce el tamaño del texto */
+    margin-top: -5px; /* Ajusta el margen superior para acercarlo */
+  }
+
+  /* Espacio entre el head y el main */
+  head {
+    margin-bottom: 20px; /* Aumenta el margen inferior */
+  }
+
+  /* Espacio entre el main y el footer */
+  footer {
+    margin-top: 50px; /* Aumenta el margen superior */
+  }
+
+  ul.enlaces li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Cambia a dirección de fila */
+  }
+  
+
+  ul.enlaces li img {
+    width: 50px; /* Reduce el tamaño de las imágenes */
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+
+  header h2 {
+    font-size: 14px; /* Reduce el tamaño del texto */
+    margin-top: 0; /* Elimina el margen superior */
+  }
+
+  .profile-pic {
+    width: 80px; /* Reduce el tamaño de la foto de perfil */
+    height: 80px;
+  }
+
+  footer {
+    padding: 10px; /* Reduce el padding */
+  }
+
+  .line {
+    width: 60%; /* Reduce el ancho de la línea */
+  }
+
+  main {
+    margin: 0; /* Ajusta los márgenes superior e inferior */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 50vh; /* Ajusta la altura mínima del contenido para centrarlo verticalmente */
+    overflow-y: hidden; /* Oculta el desbordamiento vertical */
+  }
+  footer .line {
+    width: 95%; /* Modifica el ancho de la línea */
+    margin-top: 15px; /* Modifica el margen superior de la línea */
+  }
+  
+}
+
+
+
