@@ -256,7 +256,7 @@ main {
   }
 
   footer {
-    padding: 10px; /* Reduce el padding */
+    padding: 0px; /* Reduce el padding */
   }
 
   .line {
